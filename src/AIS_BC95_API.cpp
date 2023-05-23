@@ -191,9 +191,9 @@ bool AIS_BC95_API::setupMQTT(String server, String port, String clientID, String
                              int willflag, String willOption) {
 
   Serial.println(F(">>Connecting MQTT ..."));
-  if (at_BC95.bc95) {
-    Serial.println("Cannot use MQTT. Please use DEVIO NB-SHIELD I Plus (BC95-G)");
-  } else {
+//   if (at_BC95.bc95) {
+//     Serial.println("Cannot use MQTT. Please use DEVIO NB-SHIELD I Plus (BC95-G)");
+//   } else {
 
     if (username.length() > 100 || password.length() > 100) {
       Serial.println(F("Username/Password is over 100."));
@@ -224,7 +224,7 @@ bool AIS_BC95_API::setupMQTT(String server, String port, String clientID, String
       }
     }
     at_BC95._serial_flush();
-  }
+//   }
   return flag_mqtt_connect;
 }
 
