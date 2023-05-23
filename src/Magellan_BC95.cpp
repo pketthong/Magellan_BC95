@@ -783,7 +783,7 @@ String Magellan_BC95::postData(String payload, option *coapOption, unsigned int 
 }
 
 String Magellan_BC95::getData(option *coapoption, unsigned int totaloption, String Proxy) {
-  int timeout[5] = {4000, 8000, 16000, 32000, 64000};
+  unsigned int timeout[5] = {4000, 8000, 16000, 32000, 64000};
   rcvdata        = "";
   data_buffer    = "";
   String server  = _HOST;
