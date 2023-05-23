@@ -826,7 +826,7 @@ int AT_BC95::waitForResponse(const String &success, const String &error, int tim
 bool AT_BC95::isBC95() {
 //   _Serial->println(F("AT+CGMM"));
 //   return waitForResponse("BC95HB-02-STD_900", "BC95GJB-02-STD", 5000) == 1;
-  return 1;
+  return true;
 }
 
 /****************************************/
